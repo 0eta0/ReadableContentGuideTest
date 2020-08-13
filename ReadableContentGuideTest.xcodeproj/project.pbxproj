@@ -13,6 +13,9 @@
 		19A5FD3924E4E1B20062CF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A5FD3724E4E1B20062CF3F /* Main.storyboard */; };
 		19A5FD3B24E4E1B50062CF3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A5FD3A24E4E1B50062CF3F /* Assets.xcassets */; };
 		19A5FD3E24E4E1B50062CF3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A5FD3C24E4E1B50062CF3F /* LaunchScreen.storyboard */; };
+		19A5FD4C24E4F7780062CF3F /* CustomACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5FD4B24E4F7780062CF3F /* CustomACell.swift */; };
+		19A5FD4F24E4F7AA0062CF3F /* CustomACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A5FD4E24E4F7AA0062CF3F /* CustomACell.xib */; };
+		19A5FD5124E518B80062CF3F /* CustomBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5FD5024E518B80062CF3F /* CustomBCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		19A5FD3A24E4E1B50062CF3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19A5FD3D24E4E1B50062CF3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19A5FD3F24E4E1B50062CF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A5FD4B24E4F7780062CF3F /* CustomACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomACell.swift; sourceTree = "<group>"; };
+		19A5FD4E24E4F7AA0062CF3F /* CustomACell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomACell.xib; sourceTree = "<group>"; };
+		19A5FD5024E518B80062CF3F /* CustomBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,38 @@
 				19A5FD3324E4E1B20062CF3F /* SceneDelegate.swift */,
 				19A5FD3524E4E1B20062CF3F /* ViewController.swift */,
 				19A5FD3724E4E1B20062CF3F /* Main.storyboard */,
+				19A5FD4924E4F7590062CF3F /* Cell */,
 				19A5FD3A24E4E1B50062CF3F /* Assets.xcassets */,
 				19A5FD3C24E4E1B50062CF3F /* LaunchScreen.storyboard */,
 				19A5FD3F24E4E1B50062CF3F /* Info.plist */,
 			);
 			path = ReadableContentGuideTest;
+			sourceTree = "<group>";
+		};
+		19A5FD4924E4F7590062CF3F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				19A5FD4D24E4F77C0062CF3F /* A */,
+				19A5FD4A24E4F7650062CF3F /* B */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		19A5FD4A24E4F7650062CF3F /* B */ = {
+			isa = PBXGroup;
+			children = (
+				19A5FD5024E518B80062CF3F /* CustomBCell.swift */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		19A5FD4D24E4F77C0062CF3F /* A */ = {
+			isa = PBXGroup;
+			children = (
+				19A5FD4B24E4F7780062CF3F /* CustomACell.swift */,
+				19A5FD4E24E4F7AA0062CF3F /* CustomACell.xib */,
+			);
+			path = A;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +161,7 @@
 				19A5FD3E24E4E1B50062CF3F /* LaunchScreen.storyboard in Resources */,
 				19A5FD3B24E4E1B50062CF3F /* Assets.xcassets in Resources */,
 				19A5FD3924E4E1B20062CF3F /* Main.storyboard in Resources */,
+				19A5FD4F24E4F7AA0062CF3F /* CustomACell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +174,8 @@
 			files = (
 				19A5FD3624E4E1B20062CF3F /* ViewController.swift in Sources */,
 				19A5FD3224E4E1B20062CF3F /* AppDelegate.swift in Sources */,
+				19A5FD4C24E4F7780062CF3F /* CustomACell.swift in Sources */,
+				19A5FD5124E518B80062CF3F /* CustomBCell.swift in Sources */,
 				19A5FD3424E4E1B20062CF3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
